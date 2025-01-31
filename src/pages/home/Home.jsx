@@ -78,7 +78,7 @@ export default function Home() {
       <ProductsCarrier toggleProductPopup={toggleProductPopup} selectedProductPopup={selectedProductPopup}/>
       <BlogMobile/>
       <Form/>
-      <Map/>
+      {/* <Map/> */}
       <Separator/>
       <InstagramContainer/>
       {

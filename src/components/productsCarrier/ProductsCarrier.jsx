@@ -45,28 +45,6 @@ export default function ProductsCarrier({toggleProductPopup,selectedProductPopup
         );
       }
 
-      function SampleNextArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-          <div
-            className={className}
-            style={{ ...style, display: "block", background: "black", borderRadius: "50%" }}
-            onClick={onClick}
-          />
-        );
-      }
-      
-      function SamplePrevArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-          <div
-            className={className}
-            style={{ ...style, display: "block", background: "black", borderRadius: "50%", textColor: "black" }}
-            onClick={onClick}
-          />
-        );
-      }
-
     useEffect(() => {
         Aos.init({duration: 1000});
     }, [])
