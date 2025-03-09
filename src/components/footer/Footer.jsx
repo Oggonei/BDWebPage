@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="bg-black w-full text-white flex flex-col p-8 gap-2 md:gap-4 lg:flex-row md:flex-row lg:justify-center lg:gap-36 lg:font-medium lg:text-[16px] md:text-[15px]">
             <div className='flex  items-center gap-4 md:gap-2 hover:text-main_orange cursor-pointer'>
                 <HiOutlineMail className='text-[24px]'/>
-                <a href="mailto:comercial@compumarketing.net">{t('footerEmail')}</a>
+                <a href="mailto:comercial@backupdata.com.co">{t('footerEmail')}</a>
             </div>
             <div className='flex  items-center gap-4 md:gap-2 hover:text-main_orange cursor-pointer'>
                 <IoLogoWhatsapp className='text-[24px]'/>

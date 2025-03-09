@@ -72,9 +72,9 @@ i18n
                     locationCountry: 'Bogotá- Colombia',
                     
                     instagramAccount: '@backupdata',
-                    instagramLink: 'Ver Instagram',
+                    instagramLink: 'View Instagram',
 
-                    footerEmail: 'comercial@compumarketing.net',
+                    footerEmail: 'comercial@backupdata.com.co',
                     footerWhatssApp: '+57 3104653633',
                     footerPhone: '310 4653633',
                     footerPolicy: 'Personal data protection policy',
@@ -194,7 +194,7 @@ i18n
                     instagramAccount: '@backupdata',
                     instagramLink: 'Ver Instagram',
 
-                    footerEmail: 'comercial@compumarketing.net',
+                    footerEmail: 'comercial@backupdata.com.co',
                     footerWhatssApp: '+57 3104653633',
                     footerPhone: '310 4653633',
                     footerPolicy: 'Politica de protección de datos personales',

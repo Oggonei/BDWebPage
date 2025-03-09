@@ -72,10 +72,10 @@ export default function ProductsCarrier({toggleProductPopup,selectedProductPopup
                 <Slider {...settings}>
                     <CustomSlide toggleProductPopup={toggleProductPopup}  index={1} bg='bg-bdr' title={t('productsTitleCard1')} info={t('productsInfoCard1')} selectedProductPopup={selectedProductPopup} id='1'/>
                     <CustomSlide toggleProductPopup={toggleProductPopup}  index={2} bg='bg-cloud' title={t('productsTitleCard2')} info={t('productsInfoCard2')} selectedProductPopup={selectedProductPopup} id='2'/>
-                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={3} bg='bg-cloud' title={t('productsTitleCard3')} info={t('productsInfoCard3')} selectedProductPopup={selectedProductPopup} id='1'/>
-                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={4} bg='bg-bdr' title={t('productsTitleCard4')} info={t('productsInfoCard4')} selectedProductPopup={selectedProductPopup} id='1'/>
-                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={5} bg='bg-cloud' title={t('productsTitleCard5')} info={t('productsInfoCard5')} selectedProductPopup={selectedProductPopup} id='1'/>
-                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={6} bg='bg-cloud' title={t('productsTitleCard6')} info={t('productsInfoCard6')} selectedProductPopup={selectedProductPopup} id='1'/>
+                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={3} bg='bg-cloud' title={t('productsTitleCard3')} info={t('productsInfoCard3')} selectedProductPopup={selectedProductPopup} id='3'/>
+                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={4} bg='bg-bdr' title={t('productsTitleCard4')} info={t('productsInfoCard4')} selectedProductPopup={selectedProductPopup} id='4'/>
+                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={5} bg='bg-cloud' title={t('productsTitleCard5')} info={t('productsInfoCard5')} selectedProductPopup={selectedProductPopup} id='5'/>
+                    <CustomSlide toggleProductPopup={toggleProductPopup}  index={6} bg='bg-cloud' title={t('productsTitleCard6')} info={t('productsInfoCard6')} selectedProductPopup={selectedProductPopup} id='6'/>
                 </Slider>
             </div>
         </div>

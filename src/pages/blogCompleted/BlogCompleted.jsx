@@ -23,7 +23,7 @@ export default function BlogCompleted() {
                     <MdOutlineArrowBackIosNew />
                 </span>
             </NavLink>
-            <h2 className="font-bold text-[26px] leading-tight absolute top-48 left-4 lg:top-80 lg:font-bold lg:text-[54px] lg:ml-12">{blogs[blogNumber-1].title}</h2>
+            <h2 className="font-bold text-[20px] leading-tight mt-4 absolute top-48 left-4 lg:top-80 lg:font-bold lg:text-[54px] lg:ml-12">{blogs[blogNumber-1].title}</h2>
         </div>
         <div className="flex px-8 py-6 items-center justify-between lg:justify-start md:justify-start lg:ml-6 lg:my-4">
             <div className="flex">
@@ -45,7 +45,7 @@ export default function BlogCompleted() {
         </div>
         <div className="px-8 md:px-12 flex flex-col gap-4 last:mb-8 text-[#6F6F6F] w-full lg:ml-0 lg:last:mb-16">
             <p className="font-bold text-[24px] text-black lg:text-[42px] md:text-[42px]">{blogs[blogNumber-1].title}</p>
-            <p className="lg:w-3/5 lg:text-[28px] md:text-[22px]">{blogs[blogNumber-1].fullInfo}</p>
+            <div className="full-info" dangerouslySetInnerHTML={{ __html: blogs[blogNumber-1].fullInfo }} />
         </div>
     </div>
   )
