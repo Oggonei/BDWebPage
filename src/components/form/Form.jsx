@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Form({id}) {
     
     const { i18n, t } = useTranslation()
     const { confirmEmail, setConfirmEmail } = useState(true)
+    const captcha = useRef(null)
 
     const [formInfo,setFormInfo] = useState({
         'name': '',
@@ -52,11 +54,15 @@ export default function Form({id}) {
         setFormInfo(newData)
     }
 
+    const capchaFunction = () => {
+      captcha.current.getValue() ? console.log('Validado') : console.log('No Validado')
+    }
+
   return (
     <div className="w-full py-4 bg-[#28292B] text-white justify-center items-center flex flex-col lg:flex-row lg:py-28 lg:justify-evenly lg:items-center lg:h-full md:items-start" id="contact">
         <h3 className="font-bold text-[26px] leading-tight p-8 mt-6 text-start lg:font-semibold lg:text-[63px] md:text-[42px] lg:w-2/6 md:w-5/6">{t('formTitle')}</h3>
         <div className="w-2 bg-white h-[512px] hidden lg:block"/>
-        <form  className="flex flex-col items-center justify-center w-4/5 gap-8 lg:gap-12 md:w-3/6 lg:w-2/6 md:pl-8" onSubmit={sendForm}>
+        <form  className="flex flex-col items-center justify-center w-4/5 lg:gap-12 md:w-3/6 lg:w-2/6 md:pl-8" onSubmit={sendForm}>
             <div className="w-full my-4 flex flex-col">
                 <label htmlFor="" className="w-full lg:text-[20px] md:text-[18px]">{t('formSelectTitle')}</label> 
                 <select id='productSelect' name="product" className="text-[#28292B] bg-white text-sm md:text-md lg:text-lg mt-2 cursor-pointer after:bg-transparent border border-white p-3 rounded-xl" onChange={(e) => handleForm(e.target.value,"product")}>
@@ -78,13 +84,12 @@ export default function Form({id}) {
                 <span className="ml-2">{t('formCheckButton')}</span>
             </div>
             <div className="w-full text-center mb-12 lg:text-start md:text-start">
-              {
-                confirmEmail &&
-                <div className={`bg-green-600 text-white py-2 rounded mb-4 flex justify-center items-center shadow-gray-700 shadow-md`}>
-                  <p>Solicitud enviada con exito</p>
-                </div>
-              }
-                <button type='submit' className="bg-main_orange px-8 py-2 rounded-full lg:font-semibold lg:text-[24px]  md:text-[24px] hover:bg-white hover:text-main_orange hover:border hover:border-main_orange border border-transparent hover:scale-105">{t('formButtonTitle')}</button>
+                <ReCAPTCHA
+                  ref={captcha}
+                  sitekey="6Ldze_kqAAAAAAwQl6ExV4WYmobSw2druSx55pBI"
+                  onChange={capchaFunction}
+              />
+                <button type='submit' className="bg-main_orange px-8 py-2 mt-6 rounded-full lg:font-semibold lg:text-[24px]  md:text-[24px] hover:bg-white hover:text-main_orange hover:border hover:border-main_orange border border-transparent hover:scale-105">{t('formButtonTitle')}</button>
             </div>
         </form>
     </div>

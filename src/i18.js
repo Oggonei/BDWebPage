@@ -129,6 +129,8 @@ i18n
                     productPopupList64: 'Granularly Restore Specific Folders or Items in the Mailbox',
                     productPopupList65: 'Restore Data to the Same or Different Exchange Server',
                     productPopupList66: 'Automatic Backup Verification',
+
+                    viewMap: 'View map'
                 }
             },
             es: {
@@ -249,6 +251,8 @@ i18n
                     productPopupList64: 'Restaurar de forma granular carpetas o elementos específicos en el buzón',
                     productPopupList65: 'Restaurar datos en el mismo servidor Exchange o en uno diferente',
                     productPopupList66: 'Verificación automática de copias de seguridad',
+
+                    viewMap: 'Ver mapa'
 
                 }
             },
