@@ -17,7 +17,10 @@ export default function Map() {
           <div className='relative'>
             <img src={mapa} alt='Marbella map' />
             <div className='absolute top-0 left-0 cursor-pointer'>
-              <button className='p-2 bg-white/60 rounded-xl mt-4 ml-4 border border-gray-700 shadow-xl hover:bg-black hover:text-white'>{t('viewMap')}</button>
+              <button className='p-2 bg-white/60 rounded-xl mt-4 ml-4 border border-gray-700 shadow-xl hover:bg-black hover:text-white'>
+                <a href="https://www.google.com/maps/place/Cra.+63+%23+100-57,+Suba,+Bogot%C3%A1,+D.C.,+Bogot%C3%A1,+Bogot%C3%A1,+D.C./@4.690362,-74.067489,16z/data=!4m6!3m5!1s0x8e3f9adc927d8763:0x567ec294359ed7a0!8m2!3d4.690372!4d-74.067432!16s%2Fg%2F11x11k4f_p?hl=es&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" target='_blank'>
+                  {t('viewMap')}
+                </a></button>
             </div>
           </div>
           <div className='mt-4'>
